@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    border-bottom: 1px solid #ffffff;
+    background: black;
+    color: white;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.navbar ul li a {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.navbar ul li a:hover {
+    color: blueviolet;
+}
+
+.icons-header {
+    font-size: 1.6rem;
+    display: flex;
+    gap: 10px;
+}
+
+.icons-header a {
+    color: white;
+}
+
+.icons-header .now i{
+    color: blueviolet;
+}
+
+.icons-header a:hover {
+    color: blueviolet;
+}
+
+main {
+    background-image: url(/img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    height: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.login-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+footer {
+    border-top: 1px solid #ffffff;
+    background: black;
+    color: white;
+    flex-shrink: 0;
+    text-align: center;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-icons-footer {
+    display: flex;
+    align-items: center;
+}
+
+.left-icons-footer a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.right-icons-footer {
+    display: flex;
+    align-items: center;
+}
+
+.right-icons-footer a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.right-icons-footer a:hover {
+    color: blueviolet;
+}
+
+.left-icons-footer a:hover {
+    color: blueviolet;
+}
+
+.footer-parrafo {
+    font-size: 1.2rem;
+    color: white;
+}
