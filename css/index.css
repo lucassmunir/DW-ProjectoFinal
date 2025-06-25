@@ -1,1 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    border-bottom: 1px solid #ffffff;
+    background: black;
+    color: white;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.navbar ul li a:hover {
+    color: blueviolet;
+}
+
+.icons-header {
+    font-size: 1.6rem;
+    display: flex;
+    gap: 10px;
+}
+
+.icons-header a {
+    color: white;
+}
+
+.icons-header .now i {
+    color: blueviolet;
+}
+
+.icons-header a:hover {
+    color: blueviolet;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    width: 100%;
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.conteiner-main {
+    width: 850px;
+    height: 500px;
+    margin-top: 40px;
+    margin-left: -10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.newseason {
+    color: white;
+    font-family: "Rubik Glitch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 42px;
+    letter-spacing: 15px;
+    position: relative;
+    top: -15px;
+    margin-left: 40px;
+}
+
+.cards-conteiner {
+    width: 850px;
+    height: 300px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.cards img {
+    width: 240px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px;
+}
+
+.areyou {
+    color: white;
+    font-family: "Rubik Glitch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    letter-spacing: 5px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.pay {
+    width: 120px;
+    height: 40px;
+    font-size: 22px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.logo-main {
+    width: 500px;
+    height: 500px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-main img {
+    width: 400px;
+    margin-top: 100px;
+    animation: girar 30s linear infinite;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+  }
+    to {
+        transform: rotate(360deg);
+  }
+}
+
+.logo-main p {
+    font-family: "Ballet", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.logo-main h1 {
+    font-family: "Rosarivo", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    margin-top: -35px;
+}
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #ffffff;
+    background: black;
+    color: white;
+    flex-shrink: 0;
+    text-align: center;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-icons-footer {
+    display: flex;
+    align-items: center;
+}
+
+.left-icons-footer a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.right-icons-footer {
+    display: flex;
+    align-items: center;
+}
+
+.right-icons-footer a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.right-icons-footer a:hover {
+    color: blueviolet;
+}
+
+.left-icons-footer a:hover {
+    color: blueviolet;
+}
+
+.footer-parrafo {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.main-flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+}
