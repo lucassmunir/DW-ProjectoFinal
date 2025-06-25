@@ -1,1 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    border-bottom: 1px solid #ffffff;
+    background: black;
+    color: white;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.navbar ul li a {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.navbar ul li a:hover {
+    color: blueviolet;
+}
+
+.icons-header {
+    font-size: 1.6rem;
+    display: flex;
+    gap: 10px;
+}
+
+.icons-header a {
+    color: white;
+}
+
+.icons-header .now i{
+    color: blueviolet;
+}
+
+
+main {
+    background-image: url(/img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins, sans-serif;
+}
+
+.register-container {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: white;
+    width: 420px;
+    border-radius: 20px;
+    padding: 30px 40px;
+}
+
+.register-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 1rem;
+    color:#ffffff;
+    padding: 20px 45px 20px 20px;;
+}
+
+.input-box input::placeholder {
+    color: white;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.btn a button {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.btn a button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s, background 0.2s, color 0.2s;
+    background: blueviolet;
+    color:#fff;
+}
+
+.login-link{
+    font-size: 1rem;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.login-link p a{
+    color: #fff;
+    font-weight: 600;
+}
+
+.login-link p a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    border-top: 1px solid #ffffff;
+    background: black;
+    color: white;
+    flex-shrink: 0;
+    text-align: center;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-icons-footer {
+    display: flex;
+    align-items: center;
+}
+
+.left-icons-footer a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.right-icons-footer {
+    display: flex;
+    align-items: center;
+}
+
+.right-icons-footer a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.right-icons-footer a:hover {
+    color: blueviolet;
+}
+
+.left-icons-footer a:hover {
+    color: blueviolet;
+}
+
+.footer-parrafo {
+    font-size: 1.2rem;
+    color: white;
+}

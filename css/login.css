@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -43,6 +45,8 @@ header {
 
 .navbar ul li a:hover {
     color: blueviolet;
+    transform: scale(1.05);
+    transition: transform 0.2s, background 0.2s, color 0.2s;
 }
 
 .icons-header {
@@ -73,42 +77,112 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: poppins, sans-serif;
 }
 
 .login-container {
-    background: rgba(255, 255, 255, 0.8);
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: white;
+    width: 420px;
     border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 500px;
-    height: 600px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 30px 40px;
 }
 
 .login-container h1 {
+    text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 20px;
 }
 
-.login-container form {
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 1rem;
+    color:#ffffff;
+    padding: 20px 45px 20px 20px;;
+}
+
+.input-box input::placeholder {
+    color: white;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.remember-me{
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 20px;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin: -14px 0 15px;
 }
 
-.login-container input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    width: 80%;
-    margin: 0 auto;
+.remember-me label input {
+    accent-color: #fff;
+    margin-right: 3px;
 }
 
+.remember-me a {
+    color: #ffff;
+}
 
+.remember-me a:hover {
+    text-decoration: underline;
+}
+
+.btn a button {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.btn a button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s, background 0.2s, color 0.2s;
+    background: blueviolet;
+    color:#fff;
+}
+
+.register-link{
+    font-size: 1rem;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+    color: #fff;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
 
 footer {
     border-top: 1px solid #ffffff;
