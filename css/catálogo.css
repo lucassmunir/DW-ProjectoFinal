@@ -1,1 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
 
+body{
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    border-bottom: 1px solid #ffffff;
+    background: black;
+    color: white;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.navbar ul li a {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.navbar ul li a:hover {
+    color: blueviolet;
+}
+
+.icons-header {
+    font-size: 1.6rem;
+    display: flex;
+    gap: 10px;
+}
+
+.icons-header a {
+    color: white;
+}
+
+.icons-header .now i{
+    color: blueviolet;
+}
+
+.icons-header a:hover {
+    color: blueviolet;
+}
+
+main {
+    background-image: url(/img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalogo-container {
+    align-self: start;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 12px 24px;
+    background: transparent;
+
+}
+
+.catalogo-container a {
+    color: white;
+    padding: 0 18px;
+    position: relative;
+    font-size: 1.1rem;
+    background: none;
+    border: none;
+}
+
+.catalogo-container a:not(:last-child)::after {
+    content: "|";
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.catalogo-container a:hover {
+    color: blueviolet;
+}
+
+/*funciona el catalogo container pero al meter las imagenes se lo come... */
+
+
+
+
+
+
+
+footer {
+    border-top: 1px solid #ffffff;
+    background: black;
+    color: white;
+    flex-shrink: 0;
+    text-align: center;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-icons-footer {
+    display: flex;
+    align-items: center;
+}
+
+.left-icons-footer a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.right-icons-footer {
+    display: flex;
+    align-items: center;
+}
+
+.right-icons-footer a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.right-icons-footer a:hover {
+    color: blueviolet;
+}
+
+.left-icons-footer a:hover {
+    color: blueviolet;
+}
+
+.footer-parrafo {
+    font-size: 1.2rem;
+    color: white;
+}
