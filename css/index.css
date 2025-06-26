@@ -58,7 +58,8 @@ header {
     color: white;
 }
 
-.icons-header .now i {
+.navbar ul .now {
+    font-weight: bolder;
     color: blueviolet;
 }
 
@@ -79,11 +80,12 @@ main {
 
 .conteiner-main {
     width: 850px;
-    height: 500px;
+    height: 600px;
     margin-top: 40px;
     margin-left: -10px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .newseason {
