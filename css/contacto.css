@@ -1,1 +1,260 @@
+/* HEADER */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
 
+body {
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    animation: blurFadeIn 1s cubic-bezier(.4,0,.2,1);
+}
+
+header {
+    border-bottom: 1px solid #ffffff;
+    background: black;
+    color: white;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.navbar ul li a:hover {
+    color: blueviolet;
+}
+
+.icons-header {
+    font-size: 1.6rem;
+    display: flex;
+    gap: 10px;
+}
+
+.icons-header a {
+    color: white;
+}
+
+.navbar ul .now {
+    font-weight: bolder;
+    color: blueviolet;
+}
+
+.icons-header a:hover {
+    color: blueviolet;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    width: 100%;
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.form-conteiner {
+    background: red;
+    width: 60vw;
+    height: 70vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-top {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px 40px;
+    gap: 10px;
+    background-color: rgb(239, 239, 239);
+    border-radius: 10px 10px 0 0;
+}
+
+.form-top h1 {
+    color: black;
+    font-size: 42px;
+}
+
+.form-top h2 {
+    color: blueviolet;
+    font-size: 28px;
+}
+
+.form-top p {
+    color: blueviolet;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.form-bott {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(175,175,175);
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    flex: 1;
+    padding: 40px;
+    box-sizing: border-box;
+    gap: 40px;
+    min-height: 0;
+}
+
+.formulario {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    margin-bottom: 15px;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.formulario input::placeholder {
+    font-size: 18px;
+    color: black;
+    font-weight: 100;
+}
+
+.formulario #mensaje {
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+
+.formulario #mensaje::placeholder {
+    font-size: 18px;
+    color: black;
+    font-weight: 100;
+}
+
+.formulario button {
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f0f0f0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.info-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.info-form address {
+    font-style: normal;
+    color: black;
+}
+
+/* FOOTER */
+footer {
+    border-top: 1px solid #ffffff;
+    background: black;
+    color: white;
+    flex-shrink: 0;
+    text-align: center;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-icons-footer {
+    display: flex;
+    align-items: center;
+}
+
+.left-icons-footer a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.right-icons-footer {
+    display: flex;
+    align-items: center;
+}
+
+.right-icons-footer a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.right-icons-footer a:hover {
+    color: blueviolet;
+}
+
+.left-icons-footer a:hover {
+    color: blueviolet;
+}
+
+.footer-parrafo {
+    font-size: 1.2rem;
+    color: white;
+}
+
+@keyframes blurFadeIn {
+    from {
+        opacity: 0;
+        filter: blur(8px);
+        transform: scale(0.98);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1);
+    }
+}
