@@ -116,9 +116,37 @@ main {
 
 /*funciona el catalogo container pero al meter las imagenes se lo come... */
 
+section {
+    width: 100%;
+    margin-bottom: 60px; /* espacio entre secciones */
+    text-align: center;
+}
 
+section h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 20px;
+}
 
+.productos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* pasen a la línea de abajo si no entran */
+}
 
+section article {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+article img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+}
 
 
 
