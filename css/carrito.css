@@ -57,12 +57,15 @@ header ul li a:hover {
     color: white;
 }
 
-.navbar ul .now {
-    font-weight: bolder;
+.navbar ul li a:hover {
     color: blueviolet;
 }
 
 .icons-header a:hover {
+    color: blueviolet;
+}
+
+.icons-header .now i{
     color: blueviolet;
 }
 

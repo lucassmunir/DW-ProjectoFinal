@@ -62,7 +62,8 @@ header {
     color: white;
 }
 
-.icons-header .now i{
+.navbar ul .now {
+    font-weight: bolder;
     color: blueviolet;
 }
 
