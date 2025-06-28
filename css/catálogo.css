@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,19 +8,23 @@
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: #f0f0f0;
-    font-family: Arial, sans-serif;
+    font-family: poppins, sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    animation: blurFadeIn 1s cubic-bezier(.4,0,.2,1);
 }
 
 header {
     border-bottom: 1px solid #ffffff;
     background: black;
     color: white;
-    flex-shrink: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,24 +78,20 @@ main {
     background-attachment: fixed;
     flex: 1 0 auto;
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    padding: 30px 40px;
 }
 
-.catalogo-container {
-    align-self: start;
-    margin-top: 20px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    border: 2px solid white;
-    border-radius: 20px;
-    padding: 12px 24px;
+.nav-container {
     background: transparent;
-
+    margin: 10px;
+    padding: 15px 0px;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255);
 }
 
-.catalogo-container a {
+.nav-container a {
     color: white;
     padding: 0 18px;
     position: relative;
@@ -97,7 +100,7 @@ main {
     border: none;
 }
 
-.catalogo-container a:not(:last-child)::after {
+.nav-container a:not(:last-child)::after {
     content: "|";
     color: white;
     position: absolute;
@@ -110,45 +113,66 @@ main {
     font-size: 1.1em;
 }
 
-.catalogo-container a:hover {
+.nav-container a:hover {
     color: blueviolet;
 }
 
-/*funciona el catalogo container pero al meter las imagenes se lo come... */
-
-section {
+.section-container {
+    box-sizing: border-box;
     width: 100%;
-    margin-bottom: 60px; /* espacio entre secciones */
-    text-align: center;
+    max-width: 1100px;
+    flex: 1 0 auto;
+    margin-top: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
 }
 
-section h2 {
-    font-size: 32px;
-    color: white;
-    margin-bottom: 20px;
+.section-container h2 {
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding-bottom: 10px;
 }
+
+.section-container p {
+    margin-top: 45px;
+    font-size: 2rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
+}
+
+
 
 .productos {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;          
+    justify-content: center;   
+    align-items: flex-start;
     gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap; /* pasen a la línea de abajo si no entran */
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%;           
+    box-sizing: border-box;
 }
 
-section article {
-    background: white;
+.item-img {
+    margin: 0 10px;
+    width: 160px;
+    max-width: 100%;          
+    height: 320px;
+    background-color: #bbb;
     border-radius: 10px;
-    padding: 20px;
+    flex-shrink: 0;
 }
-
-article img {
-    width: 180px;
-    height: auto;
-    border-radius: 10px;
-}
-
-
 
 footer {
     border-top: 1px solid #ffffff;
@@ -194,4 +218,17 @@ footer {
 .footer-parrafo {
     font-size: 1.2rem;
     color: white;
+}
+
+@keyframes blurFadeIn {
+    from {
+        opacity: 0;
+        filter: blur(8px);
+        transform: scale(0.98);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1);
+    }
 }
