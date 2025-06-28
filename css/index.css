@@ -89,7 +89,6 @@ main {
 
 .conteiner-main {
     width: 850px;
-    height: 600px;
     margin-top: 40px;
     margin-left: -10px;
     display: flex;
@@ -173,9 +172,10 @@ main {
 }
 
 .logo-main img {
-    width: 400px;
-    margin-top: 100px;
+    width: 380px;
+    margin-top: 80px;
     animation: girar 30s linear infinite;
+    border-radius: 50%;
 }
 
 @keyframes girar {
@@ -195,6 +195,7 @@ main {
     font-style: normal;
     font-size: 38px;
     margin-bottom: 10px;
+    margin-top: -10px;
 }
 
 .sub2 {

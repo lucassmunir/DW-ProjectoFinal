@@ -84,25 +84,29 @@ main {
 }
 
 .form-conteiner {
-    background: red;
     width: 60vw;
     height: 70vh;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
 }
 
 .form-top {
     display: flex;
     flex-direction: column;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
     padding: 20px 0 20px 40px;
     gap: 10px;
-    background-color: rgb(239, 239, 239);
     border-radius: 10px 10px 0 0;
+
 }
 
 .form-top h1 {
-    color: black;
+    color: white;
+    font-weight: bolder;
     font-size: 42px;
 }
 
@@ -112,17 +116,15 @@ main {
 }
 
 .form-top p {
-    color: blueviolet;
+    color: white;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 400;
     line-height: 1.5;
 }
 
 .form-bott {
     display: flex;
     flex-direction: row;
-    background-color: rgb(175,175,175);
-    border-radius: 0 0 10px 10px;
     width: 100%;
     flex: 1;
     padding: 40px;
@@ -184,6 +186,12 @@ main {
     border: none;
     outline: none;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.formulario button:hover {
+    background-color: #7a2b8c;
+    transform: scale(1.05);
 }
 
 .info-form {
@@ -196,7 +204,7 @@ main {
 
 .info-form address {
     font-style: normal;
-    color: black;
+    color: white;
 }
 
 /* FOOTER */
@@ -256,5 +264,78 @@ footer {
         opacity: 1;
         filter: blur(0);
         transform: scale(1);
+    }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+    }
+    .navbar {
+        display: none;
+    }
+
+    .main-flex {
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    .form-conteiner {
+        width: 100%;
+        height: auto;
+    }
+
+    .form-top {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .form-top p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .form-bott {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .formulario input,
+    .formulario #mensaje {
+        width: 300px;
+    }
+
+    .formulario button {
+        width: 100%;
+    }
+
+    .info-form {
+        align-items: flex-start;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        gap: 10px;
+    }
+
+    footer p {
+        order: 1;
+        font-size: 1rem;
+    }
+
+    footer .left-icons-footer {
+        order: 2;
+    }
+
+    footer .right-icons-footer {
+        order: 3;
     }
 }
