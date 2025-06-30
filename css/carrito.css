@@ -172,7 +172,7 @@ header ul li a:hover {
     width: 60px;
     height: 40px;
     padding: 8px;
-    border: 3px solid #6b0434;
+    border: 3px solid blueviolet;
     border-radius: 5px;
     text-align: center;
     font-size: 1rem;
@@ -202,7 +202,7 @@ header ul li a:hover {
 
 .btn-pagar {
     margin-top: 10px;
-    padding: 5px 20px;
+    padding: 13px 30px;
     background: white;
     color: black;
     border: none;

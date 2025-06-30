@@ -81,7 +81,7 @@ header ul li a:hover {
 
 
 .imagen {
-    width: 300px;
+    width: 300;
     height:300px;
     object-fit: cover;
     border-radius: 50%;  
@@ -98,9 +98,13 @@ header ul li a:hover {
 }
 
 .letras{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #ffffff;
-     font-size: 1.2rem;
-    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    font-family: poppins, sans-serif;
 }
 
 

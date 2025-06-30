@@ -15,7 +15,6 @@ html{
 body{
     background: #f0f0f0;
     font-family: poppins, sans-serif;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     animation: blurFadeIn 1s cubic-bezier(.4,0,.2,1);
@@ -73,11 +72,10 @@ header {
 
 main {
     background-image: url(/img/fondo.jpg);
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    flex: 1 0 auto;
+    background-size: cover;
     display: flex;
     align-items: center;
     flex-direction: column;
