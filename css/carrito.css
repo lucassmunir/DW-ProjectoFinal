@@ -57,15 +57,11 @@ header ul li a:hover {
     color: white;
 }
 
-.navbar ul li a:hover {
+.icons-header .now i {
     color: blueviolet;
 }
 
 .icons-header a:hover {
-    color: blueviolet;
-}
-
-.icons-header .now i{
     color: blueviolet;
 }
 
@@ -176,7 +172,7 @@ header ul li a:hover {
     width: 60px;
     height: 40px;
     padding: 8px;
-    border: 3px solid blueviolet;
+    border: 3px solid #6b0434;
     border-radius: 5px;
     text-align: center;
     font-size: 1rem;
@@ -205,8 +201,8 @@ header ul li a:hover {
 }
 
 .btn-pagar {
-    margin-top: 20px;
-    padding: 10px 25px;
+    margin-top: 10px;
+    padding: 5px 20px;
     background: white;
     color: black;
     border: none;
