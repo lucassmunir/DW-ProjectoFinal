@@ -71,7 +71,7 @@ header {
 }
 
 main {
-    background-image: url(/img/fondo.jpg);
+    background-image: url(../img/fondo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -174,175 +174,175 @@ main {
 }
 
 .img-remera1 {
-    background-image: url(/img/catalogo/remera1.jpg);
+    background-image: url(../img/catalogo/remera1.jpg);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-remera2 {
-    background-image: url(/img/catalogo/remera2.jpg);
+    background-image: url(../img/catalogo/remera2.jpg);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-remera3 {
-    background-image: url(/img/catalogo/remera3.jpg);
+    background-image: url(../img/catalogo/remera3.jpg);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-remera4 {
-    background-image: url(/img/catalogo/remera4.jpg);
+    background-image: url(../img/catalogo/remera4.jpg);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-remera5 {
-    background-image: url(/img/catalogo/remera5.jpg);
+    background-image: url(../img/catalogo/remera5.jpg);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-pantalon1 {
-    background-image: url(/img/catalogo/pantalon1.jpg);
+    background-image: url(../img/catalogo/pantalon1.jpg);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-pantalon2 {
-    background-image: url(/img/catalogo/pantalon2.jpg);
+    background-image: url(../img/catalogo/pantalon2.jpg);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-pantalon3 {
-    background-image: url(/img/catalogo/pantalon3.jpg);
+    background-image: url(../img/catalogo/pantalon3.jpg);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-pantalon4 {
-    background-image: url(/img/catalogo/pantalon4.jpg);
+    background-image: url(../img/catalogo/pantalon4.jpg);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-pantalon5 {
-    background-image: url(/img/catalogo/pantalon5.jpg);
+    background-image: url(../img/catalogo/pantalon5.jpg);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-acc1 {
-    background-image: url(/img/catalogo/acc1.jpg);
+    background-image: url(../img/catalogo/acc1.jpg);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-acc2 {
-    background-image: url(/img/catalogo/acc2.jpg);
+    background-image: url(../img/catalogo/acc2.jpg);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-acc3 {
-    background-image: url(/img/catalogo/acc3.jpg);
+    background-image: url(../img/catalogo/acc3.jpg);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-acc4 {
-    background-image: url(/img/catalogo/acc4.jpg);
+    background-image: url(../img/catalogo/acc4.jpg);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-acc5 {
-    background-image: url(/img/catalogo/acc5.jpg);
+    background-image: url(../img/catalogo/acc5.jpg);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-buzo1 {
-    background-image: url(/img/catalogo/buzo1.jpg);
+    background-image: url(../img/catalogo/buzo1.jpg);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-buzo2 {
-    background-image: url(/img/catalogo/buzo2.jpeg);
+    background-image: url(../img/catalogo/buzo2.jpeg);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-buzo3 {
-    background-image: url(/img/catalogo/buzo3.png);
+    background-image: url(../img/catalogo/buzo3.png);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-buzo4 {
-    background-image: url(/img/catalogo/buzo4.jpeg);
+    background-image: url(../img/catalogo/buzo4.jpeg);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-buzo5 {
-    background-image: url(/img/catalogo/buzo5.webp);
+    background-image: url(../img/catalogo/buzo5.webp);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-calzado1 {
-    background-image: url(/img/catalogo/calzado1.webp);
+    background-image: url(../img/catalogo/calzado1.webp);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-calzado2 {
-    background-image: url(/img/catalogo/calzado2.webp);
+    background-image: url(../img/catalogo/calzado2.webp);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-calzado3 {
-    background-image: url(/img/catalogo/calzado3.webp);
+    background-image: url(../img/catalogo/calzado3.webp);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-calzado4 {
-    background-image: url(/img/catalogo/calzado4.webp);
+    background-image: url(../img/catalogo/calzado4.webp);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .img-calzado5 {
-    background-image: url(/img/catalogo/calzado5.webp);
+    background-image: url(../img/catalogo/calzado5.webp);
     background-position: center;
     background-size: cover;
     border: 1px solid rgb(255, 255, 255);
