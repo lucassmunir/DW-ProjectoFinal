@@ -66,7 +66,7 @@ header ul li a:hover {
 }
 
 .main-carrito {
-    background-image: url(/img/fondo.jpg);
+    background-image: url(../img/fondo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -116,13 +116,13 @@ header ul li a:hover {
 }
 
 .img-remera {
-    background-image: url('/img/catalogo/remera1.jpg');
+    background-image: url(../img/catalogo/remera1.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .img-pantalon {
-    background-image: url('/img/catalogo/pantalon1.jpg');
+    background-image: url(../img/catalogo/pantalon1.jpg);
     background-size: cover;
     background-position: center;
 }
